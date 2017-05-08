@@ -1,14 +1,16 @@
-#required functionality::: mutiple patterns can b supplied with && and || checking simultaneously
-#file names with $ sign not getting moved 
-# names of this type "-ishq-wala-love-(mastiway.com).mp3" not getting moved
+#Searching recursively for files having specified patterns in their name and Moving them to a specified directory
+
+#TO DO :: required functionality::: 
+#file names with $ sign not getting moved
 import os
-patterns=["Agent",".mp3"]
+patterns=["give the list of patterns to be searched for"] 
 all_pat_present=1 # if 1 then fetches only those files which contain all the patterns specified into list
 # if 0 then fetches any file that contain atleast one of the specified patterns in the list
-main_path="/media/mj/F6A400C5A4008A77/2015/"
-source_dir_name="vinod"
-dest_dir_name="kl"
+main_path="PATH OF DIRECTORY (IN WHICH SEARCH IS TO BE MADE RECURSIVELY)"
+source_dir_name=""
+dest_dir_name="NAME OF DIRECTORY THAT WOULD BE CREATED ON SPECIFIED PATH AND WOULD STORE THE SEARCH RESULTS"
 dest_path=main_path+dest_dir_name+"/"
+#here give the names of directories(in which search is not to be made) present in current directory
 not_to_be_checked_in_dir=(dest_dir_name)
 
 os.chdir(main_path)
@@ -26,8 +28,8 @@ def moveFun(path):		#supply the path of directory from which all video files to 
 	mn=os.popen("ls").read().split("\n")
 	for i in mn:
 		if os.path.isdir(i):
-			#videos in the following folders should not b moved anywhere
-			if i not in not_to_be_checked_in_dir: #can b modified for other devices
+			#files in the following folders should not be moved anywhere
+			if i not in not_to_be_checked_in_dir: 
 				cn.append(i)
 	
 		else :
