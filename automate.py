@@ -3,7 +3,7 @@
 #TO DO :: required functionality::: 
 #file names with $ sign not getting moved
 import os
-patterns=["give the list of patterns to be searched for"] 
+patterns=[] #give the list of patterns to be searched for 
 all_pat_present=1 # if 1 then fetches only those files which contain all the patterns specified into list
 # if 0 then fetches any file that contain atleast one of the specified patterns in the list
 main_path="PATH OF DIRECTORY (IN WHICH SEARCH IS TO BE MADE RECURSIVELY)"
@@ -11,7 +11,7 @@ source_dir_name=""
 dest_dir_name="NAME OF DIRECTORY THAT WOULD BE CREATED ON SPECIFIED PATH AND WOULD STORE THE SEARCH RESULTS"
 dest_path=main_path+dest_dir_name+"/"
 #here give the names of directories(in which search is not to be made) present in current directory
-not_to_be_checked_in_dir=(dest_dir_name)
+not_to_be_checked_in_dir=(dest_dir_name) #give in this tuple the directories name in which search is not to be made
 
 os.chdir(main_path)
 bn=os.popen("ls").read().split("\n")
@@ -21,7 +21,7 @@ if dest_dir_name not in bn:
 
 dit={"-":"\-","(":"\(",")":"\)","\\":"\\\\","[":"\[","]":"\]","'":"\'","$":"\$"}
 
-def moveFun(path):		#supply the path of directory from which all video files to be fetched and moved
+def moveFun(path):		#supply the path of directory from which all  files  have to be fetched and moved
 	cn=[]
 	pt=main_path+path
 	os.chdir(pt)
