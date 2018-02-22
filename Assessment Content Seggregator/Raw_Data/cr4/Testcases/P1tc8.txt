@@ -1,0 +1,19 @@
+Tag: Boundry Case
+Problem Title : Henry and the cakes
+
+Input:
+
+5
+{1,2,3,4,5}
+3
+aab
+uvh
+iops
+
+Expected Output:
+
+monday
+wednesday
+sunday
+
+
