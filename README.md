@@ -16,12 +16,12 @@
 
   <ol>
   <br>
-   <li> seg.py :: Goes deep into directory structure, reads files, makes wildcard searches, seggregates them on basis of<br>
+   <li> seg.py :: Goes deep into directory structure, reads files, makes wildcard searches, seggregates them on basis of
   'Problem title-Tag-Level', 'Test-Cases Tags' , 'Solutions Languages'.<br>
 
   <h6>Run: python3 seg.py</h6></li>
  <br>
-   <li> concurrent_seg.py :: Obtained after reverse engineering of seg.py by using multithreading and thread syncronization in<br> all those tasks in which concurrent processing was possible <br>
+   <li> concurrent_seg.py :: Obtained after reverse engineering of seg.py by using multithreading and thread syncronization in  all those tasks in which concurrent processing was possible <br>
   <h6>Run: python3 concurrent_seg.py</h6><br>
 </li>
   </ol>
@@ -34,8 +34,8 @@
 
 
 <li> automate.py  ::<br>
-Implements Linux { grep + mv } , it requires a pattern in input and makes a recursive search (for all the files matching<br> the given pattern) in all the directories starting from the base directory (whose path has to be supplied in input). <br>
-It moves all the searched files into a directory (that gets created dynamically in base directory and its name has to be<br> supplied in input). <br>
+Implements Linux { grep + mv } , it requires a pattern in input and makes a recursive search (for all the files matching the given pattern) in all the directories starting from the base directory (whose path has to be supplied in input). <br>
+It moves all the searched files into a directory (that gets created dynamically in base directory and its name has to be supplied in input). <br>
 Moreover,it has options for multi pattern search :: with ALL PATTERNS INCLUDE and ANY ONE PATTERN INCLUDE choices..
               </li><br>     
                    
