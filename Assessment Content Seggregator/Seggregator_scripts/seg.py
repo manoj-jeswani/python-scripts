@@ -4,6 +4,7 @@ import random
 import re
 from collections import defaultdict
 import shutil
+import time
 
 BASE_DIR=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -174,4 +175,6 @@ def main():
 
 
 if __name__=="__main__":
+	stime=time.time()
 	main()
+	print(time.time()-stime)	
